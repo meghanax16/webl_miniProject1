@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="sample.css">
+    <style>
+      input,select{
+        font-size: 15px;
+        background-color:rgb(219, 249, 174);
+        border-radius: 5px;
+        padding: 3px;
+      }
+
+      ul1{
+        font-size: 20px;
+        color: black;
+        display:flexbox;
+        
+      }
+    </style>
+   </head>
+<body>
+    <script type="text/javascript">
+        function treeVar(clicked_id)
+        {
+            if(clicked_id=="tree")
+            document.getElementById("answer").value = "hello";
+            
+        }
+    </script>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">MyAreca</a>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="types.html">TYPES</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="yield.html">YIELD FORECAST</a></li>
+        <li><a href="diseases.html">DISEASES</a></li>
+        <li><a href="pests.html">PESTS</a></li>
+        <li><a href="https://www.krishimaratavahini.kar.nic.in/MainPage/DailyMrktPriceRep2.aspx?Rep=Com&CommCode=140&VarCode=1&Date=12/10/2018&CommName=Arecanut%20/%20%E0%B2%85%E0%B2%A1%E0%B2%BF%E0%B2%95%E0%B3%86&VarName=Red%20/%20%E0%B2%95%E0%B3%86%E0%B2%82%E0%B2%AA%E0%B3%81">TODAY'S RATES</a></li>
+        <li><a href="contacts.php">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class = "btns"></div>
+  <space>    </space>
+
+
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Ideal Yield Forecasting</div> 
+      <div class ="sub_title"></div>
+      
+    </div>
+    <div class="checkYield">
+        <label for="tree">Choose a tree variety:</label>
+        <select name="Tree Variety"id="tree" onchange="treeVar(this.id)">
+            <optgroup label="Tall Variety"></optgroup>
+                <option value="Sumangala">Sumangala</option>
+                <option value="Sreemangala">Sreemangala</option>
+                <option value="Swarnamangala">Swarnamangala</option>
+                <option value="Mohitnagar">Mohitnagar</option>
+                <option value="Kikuchi">Kikuchi</option>
+                <option value="Madhuramangala">Madhuramangala</option>
+                <option value="Nalbari">Nalbari</option>
+            <optgroup label="Semi Tall Variety"></optgroup>
+                <option value="Mangala">Mangala</option>
+                <option value="Shatamangala">Shatamangala</option>
+            <optgroup label="Dwarf Variety"></optgroup>
+                <option value="VTAHL1">VTAHL1</option>
+                <option value="VTAHL2">VTAHL2</option><br><br>
+        </select>
+        <br><br><input type="submit" value="submit" onclick="treeVar()"/>
+        <!--<p>Enter the variety of the tree</p>
+        <input type="text" value="" id="treer"/>
+        <input type ="submit" name="submit" onclick="treeVar(tree)"/>
+        <input type="text" id="answer" value="" disabled />-->
+    </div> 
+    <p>
+    </p>
+  
+  </div>
+  
+
+</body>
+</html>
